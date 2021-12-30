@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "scss": "sass --watch --style=compressed resource/scss:public/css"
+  },
+  "devDependencies": {
+    "sass": "^1.45.1"
+  }
+}

@@ -1,0 +1,40 @@
+.bg-dark-custom-page {
+    color: #fff !important;
+    background-color: #393939a8 !important;
+}
+
+.bg-dark-introduction {
+    color: #fff !important;
+    background-color: #39393979 !important;
+}
+
+.bg-dark-custom-navbar {
+    color: #fff !important;
+    background-color: #343a40ea !important;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+
+    img {
+        overflow: hidden;
+        transition: all 2s;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        opacity: 0;
+    }
+}
+
+body {
+    background-image: url('/public/image/background/background1.jpg'); // fallback
+}

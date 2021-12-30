@@ -1,0 +1,10 @@
+.profile {
+    width: 200px;
+    border-radius: 8rem;
+    transition: 2s;
+}
+
+.profile:hover {
+    transform: scale(1.2);
+    border-radius: 1rem;
+}

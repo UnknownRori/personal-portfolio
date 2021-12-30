@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <script src="/public/js/jquery-3.6.0.js"></script>
+    <script defer src="/public/js/bootstrap.bundle.js"></script>
+    <script defer src="/public/js/app.js"></script>
+    <link rel="stylesheet" href="/public/css/bootstrap.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>UnknownRori - Personal Portfolio</title>
+</head>
+
+<body id="home">
+    <div class="background sticky-top">
+        <img data-background="1" style="opacity: 1;" src="./public/image/background/background1.jpg" alt="">
+        <img data-background="2" style="opacity: 0;" src="./public/image/background/background2.jpg" alt="">
+        <img data-background="3" style="opacity: 0;" src="./public/image/background/background3.jpg" alt="">
+        <img data-background="4" style="opacity: 0;" src="./public/image/background/background4.jpg" alt="">
+        <img data-background="5" style="opacity: 0;" src="./public/image/background/background5.jpg" alt="">
+    </div>
+    <nav class="navbar navbar-expand-md bg-dark-custom-navbar navbar-dark sticky-top">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="btn-top" class="hidden">
+        <a href="#home" class="btn btn-primary text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="introduction bg-dark-introduction text-center pt-5">
+        <img class="profile m-2" src="./public/image/profile/UnknownRori.png" alt="">
+        <h2 id="introduction-pen-name-text"></h2>
+        <h5 id="introduction-profession-text"></h5>
+        <h6 id="introduction-hidden" class="hidden">I design and built a website</h6>
+    </div>
+
+    <div class="container bg-dark-custom-page" class="p-2">
+        <article data-hidden="1" id="introduction" class="hidden">
+            <h2 class="text-center">Brief Introduction</h2>
+            Hello my name is Akbar Hendra jaya i usually go with UnknownRori, i live in Indonesia i am an average high
+            school student, i also have diverse skill ranging from HTML, CSS, Javascript, PHP and Python,
+            i also have experience using framework like Laravel, Bootstrap, Jquery, my hobby is playing games and
+            coding. I looking forward to working with you
+        </article>
+        <article data-hidden="2" id="work" class="hidden">
+            <h2 data-hidden="3" class="text-center hidden">My Project</h2>
+            <div data-hidden="4" class="row text-center p-3 hidden">
+                <div id="work" data-hidden="5" class="col-4 hidden p-3">
+                    <a href="https://github.com/UnknownRori/fake-e-commerce-laravel-app" target="_blank">
+                        <img class="img-fluid" src="public\image\work\fake-e-commerce-web-app-2.png" alt="">
+                    </a>
+                    <h4><a target="_blank" href="https://github.com/UnknownRori/fake-e-commerce-laravel-app"
+                            class="text-white text-decoration-none">Fake E-Commerce Web Application</a></h4>
+                </div>
+                <div id="work" data-hidden="6" class="col-4 hidden p-3">
+                    <a href="https://github.com/UnknownRori/fake-e-commerce-laravel-app" target="_blank">
+                        <img class="img-fluid" src="public\image\work\portfolio.png" alt="">
+                    </a>
+                    <h4><a target="_blank" href="https://github.com/UnknownRori/fake-e-commerce-laravel-app"
+                            class="text-white text-decoration-none">Personal Portfolio</a></h4>
+                </div>
+                <div data-hidden="8" class="col-4 hidden p-3">
+                    Coming Soon
+                </div>
+                <div data-hidden="9" class="col-4 hidden p-3">
+                    Coming Soon
+                </div>
+                <div data-hidden="10" class="col-4 hidden p-3">
+                    Coming Soon
+                </div>
+                <div data-hidden="11" class="col-4 hidden p-3">
+                    Coming Soon
+                </div>
+            </div>
+            <div data-hidden="12" class="m-auto text-center p-2 hidden">
+                <a id="showall" class="text-decoration-none btn btn-dark text-white"
+                    href="https://github.com/UnknownRori" data-target="_blank">
+                    Show All
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                </a>
+            </div>
+        </article>
+    </div>
+
+    <div id="contact" class="container-fluid text-white bg-dark p-3 mb-3 text-center" style="height: 200px;">
+        <h2>Let's work together</h2>
+        <h5 class="pb-3">Contact me</h5>
+        <div class="container p-3">
+            <a href="" class="p-3 m-3 link">
+                <img width="25" height="25"
+                    src="./public/image/contact/Twitter social icons - rounded square - white.png">
+                <label>Twitter</label>
+            </a>
+            <a href="" class="p-3 m-3 link">
+                <img width="25" height="25" src="./public/image/contact/GitHub-Mark-Light-32px.png" alt="">
+                <label>Github</label>
+            </a>
+        </div>
+        <!-- <div class="row">
+            <div class="col-6">
+                <a href="#">
+                    <img width="25" height="25" src="./public/image/contact/twitter.svg" alt="twitter logo">
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="#">
+                    <img width="25" height="25" src="./public/image/contact/GitHub-Mark-Light-32px.png" alt="">
+                </a>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="footer bg-dark fixed-bottom">
+        <div class="container">
+            <div class="text-center">
+                <p class="text-muted m-0 p-0">
+                    <script>
+                        var n = new Date();
+                        document.write(n.getFullYear());
+                    </script>
+                    &copy;<b id="Author"></b>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

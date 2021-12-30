@@ -1,0 +1,38 @@
+@import "hidden";
+@import "background";
+@import "profile";
+@import "custom-button";
+@import "work";
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: 1s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.introduction {
+    height: 91vh;
+}
+
+.image-container {
+    width: 300px;
+    height: 300px;
+}
+
+.link {
+    color: rgb(185, 185, 185);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.link:hover {
+    color: white;
+    img {
+        transform: translateY(1rem);
+    }
+    label {
+        transform: translateY(1rem);
+    }
+}
