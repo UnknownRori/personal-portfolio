@@ -37,4 +37,7 @@
 
 body {
     background-image: url('/public/image/background/background1.jpg'); // fallback
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

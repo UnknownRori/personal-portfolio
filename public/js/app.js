@@ -20,12 +20,12 @@ let BackgroundInterval = () => {
     let interval = 2;
     let beforeinterval = 1;
     const backroundInterval = setInterval(()=>{
-
+        console.log(beforeinterval);
         $('[data-background=' + beforeinterval.toString() + ']').css('opacity', 0);
         $('[data-background=' + interval.toString() + ']').css('opacity', 1);
 
         beforeinterval = interval;
-        if (interval == 6) {
+        if (interval == 5) {
             interval = 0;
         }
         interval++;
