@@ -16,10 +16,7 @@
     </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- <script src="./public/js/jquery-3.6.0.js"></script> -->
-    <!-- <script defer src="./public/js/bootstrap.bundle.js"></script> -->
     <script defer src=".//public/js/app.js"></script>
-    <!-- <link rel="stylesheet" href="./public/css/bootstrap.css"> -->
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>UnknownRori - Personal Portfolio</title>
@@ -33,28 +30,6 @@
         <img data-background="4" style="opacity: 0;" src="./public/image/background/background4.jpg" alt="">
         <img data-background="5" style="opacity: 0;" src="./public/image/background/background5.jpg" alt="">
     </div>
-    <nav class="navbar navbar-expand-md bg-dark-custom-navbar navbar-dark sticky-top">
-        <div class="container">
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#introduction">Introduction</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#work">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
     <div id="btn-top" class="hidden">
         <a href="#home" class="btn btn-primary text-white">
@@ -86,7 +61,7 @@
             <div data-hidden="4" class="row text-center p-3 hidden">
                 <div id="work" data-hidden="5" class="col-4 hidden p-3">
                     <a href="https://github.com/UnknownRori/fake-e-commerce-laravel-app" target="_blank">
-                        <img class="img-fluid" src="./public/image/work/fake-e-commerce-web-app-2.png" alt="">
+                        <img class="img-fluid" src="./public/image/work/fake-e-commerce-web-app.png" alt="">
                     </a>
                     <h6><a target="_blank" href="https://github.com/UnknownRori/fake-e-commerce-laravel-app"
                             class="text-white text-decoration-none">Fake E-Commerce Web Application</a></h6>
@@ -99,7 +74,11 @@
                             class="text-white text-decoration-none">Personal Portfolio</a></h6>
                 </div>
                 <div data-hidden="8" class="col-4 hidden p-3">
-                    Coming Soon
+                    <a href="https://unknownrori.github.io/basic-online-calculator/" target="_blank">
+                        <img class="img-fluid" src="./public/image/work/basic-calculator.png" alt="">
+                    </a>
+                    <h6><a target="_blank" href="https://unknownrori.github.io/basic-online-calculator/"
+                            class="text-white text-decoration-none">Basic Calculator</a></h6>
                 </div>
                 <div data-hidden="9" class="col-4 hidden p-3">
                     Coming Soon
@@ -125,7 +104,8 @@
         </article>
     </div>
 
-    <div id="contact" class="container-fluid text-white bg-dark p-3 mb-3 text-center" style="height: 200px;">
+    <div id="contact" class="container-fluid text-white bg-dark-custom-navbar p-3 mb-3 text-center"
+        style="height: 200px;">
         <h2>Let's work together</h2>
         <h5 class="pb-3">Contact me</h5>
         <div class="container p-3">
@@ -139,18 +119,6 @@
                 <label>Github</label>
             </a>
         </div>
-        <!-- <div class="row">
-            <div class="col-6">
-                <a href="#">
-                    <img width="25" height="25" src="./public/image/contact/twitter.svg" alt="twitter logo">
-                </a>
-            </div>
-            <div class="col-6">
-                <a href="#">
-                    <img width="25" height="25" src="./public/image/contact/GitHub-Mark-Light-32px.png" alt="">
-                </a>
-            </div>
-        </div> -->
     </div>
 
     <div class="footer bg-dark fixed-bottom">
