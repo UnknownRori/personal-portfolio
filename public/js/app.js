@@ -3,7 +3,7 @@ $(()=> {
     HiddenWork();
     $('#introduction-hidden').removeClass('hidden');
     PrintLetterbyLetter("Hi! I am UnknownRori", 100, "introduction-pen-name-text");
-    PrintLetterbyLetter("A Web Developer", 100, "introduction-profession-text");
+    PrintLetterbyLetter("A Fullstack Web Developer", 100, "introduction-profession-text");
     PrintLetterbyLetter("UnknownRori", 100, "Author");
 })
 
