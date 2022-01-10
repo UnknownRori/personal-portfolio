@@ -1,0 +1,21 @@
+$opacity: 0.50;
+:root{
+    scrollbar-color: rgba(221, 221, 221, $opacity) rgba(58, 58, 58, $opacity) !important;
+    scrollbar-width: thin !important;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(221, 221, 221, $opacity);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(46,54,69, $opacity);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(58, 58, 58, $opacity);
+} 

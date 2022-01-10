@@ -3,6 +3,7 @@
 @import "profile";
 @import "custom-button";
 @import "work";
+@import "custom-scrollbar";
 
 * {
     margin: 0;
@@ -10,6 +11,11 @@
     scroll-behavior: smooth;
     transition: 1s ease-in-out;
     font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .introduction {
@@ -22,8 +28,6 @@
 }
 
 .link {
-    color: rgb(185, 185, 185);
-    text-decoration: none;
     transition: 1s;
 }
 

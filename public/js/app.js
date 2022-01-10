@@ -5,6 +5,11 @@ $(()=> {
     PrintLetterbyLetter("Hi! I am UnknownRori", 100, "introduction-pen-name-text");
     PrintLetterbyLetter("A Fullstack Web Developer", 100, "introduction-profession-text");
     PrintLetterbyLetter("UnknownRori", 100, "Author");
+    $('#introduction-pen-name-text').removeClass('hidden-left');
+    $('#introduction-profession-text').removeClass('hidden-right');
+    setTimeout(() => {
+        $('body').css('overflow-y', 'auto');
+    }, 3000);
 })
 
 $(window).scroll(() => {

@@ -1,4 +1,14 @@
 .hidden {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(100px);
+}
+
+.hidden-left {
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+.hidden-right {
+    transform: translateX(100px);
+    opacity: 0;
 }
