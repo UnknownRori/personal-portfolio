@@ -1,0 +1,9 @@
+#work img{
+    box-shadow: 5px 5px 12px .2px rgba(32, 32, 32, 0.89)
+}
+#work:hover{
+    transform: translateY(-10px);
+    img {
+        box-shadow: 1.5px 8px 12px 2px rgba(32, 32, 32, 0.89)
+    }
+}
