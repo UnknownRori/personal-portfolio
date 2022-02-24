@@ -1,5 +1,11 @@
 .hidden {
     opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 0;
+    position: fixed;
+    pointer-events: none;
     transform: translateY(100px);
 }
 

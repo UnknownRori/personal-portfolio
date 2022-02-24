@@ -21,6 +21,19 @@
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>UnknownRori - Personal Portfolio</title>
+
+    <meta name="title" content="UnknownRori - Personal Portfolio">
+    <meta name="description" content="UnknownRori's Personal Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="unknownrori.github.io/personal-portfolio/">
+    <meta property="og:title" content="UnknownRori - Personal Portfolio">
+    <meta property="og:description" content="UnknownRori's Personal Portfolio">
+    <meta property="og:image" content="https://github.com/UnknownRori/personal-portfolio/blob/master/public/image/work/portfolio.jpg">
+    <meta property="twitter:card" content="https://github.com/UnknownRori/personal-portfolio/blob/master/public/image/work/portfolio.jpg">
+    <meta property="twitter:url" content="unknownrori.github.io/personal-portfolio/">
+    <meta property="twitter:title" content="UnknownRori - Personal Portfolio">
+    <meta property="twitter:description" content="UnknownRori's Personal Portfolio">
+    <meta property="twitter:image" content="https://github.com/UnknownRori/personal-portfolio/blob/master/public/image/profile/UnknownRori.jpg">
 </head>
 
 <body id="home">
@@ -32,68 +45,83 @@
         <img data-background="5" style="opacity: 0;" src="./public/image/background/background5.jpg" alt="">
     </div>
 
-    <div id="btn-top" class="hidden">
-        <a href="#home" class="btn btn-primary text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
-            </svg>
-        </a>
-    </div>
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <div class="container">
 
-    <div class="introduction bg-dark-introduction text-center pt-5">
-        <img class="profile m-2 hidden-top" src="./public/image/profile/UnknownRori.jpg" alt="">
-        <h2 id="introduction-pen-name-text" class="hidden-left"></h2>
-        <h5 id="introduction-profession-text" class="hidden-right"></h5>
-        <h6 id="introduction-hidden" class="hidden">I design and built a website</h6>
-    </div>
+            <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
-    <main class="container bg-dark-custom-page" class="p-2">
-        <article data-hidden="1" id="introduction" class="hidden">
-            <h2 class="text-center">Brief Introduction</h2>
-            Hello my name is Akbar Hendra jaya i usually go with UnknownRori, i live in Indonesia i am an average high
-            school student, i have diverse skill ranging from HTML, CSS, Javascript, SCSS, PHP, Java, and Python
-            i also have experience using framework and library like Laravel, Bootstrap, Jquery, Tailwind, and i also know about source management like git. I looking forward to working with you
-        </article>
-        <article data-hidden="2" class="hidden">
-            <h2 data-hidden="3" class="text-center hidden">My Project</h2>
-            <div data-hidden="4" class="row text-center p-3 hidden">
-                <div id="work" data-hidden="5" class="col-sm-4 hidden p-3">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a data-target="profile" type="button" onclick="do_nav(this)" class="nav-link">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-target="projects" type="button" onclick="do_nav(this)" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-target="about" type="button" onclick="do_nav(this)"class="nav-link">About me</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    
+    <main class="container text-white">
+        
+        <section id="profile">
+            <div class="pt-5 text-center text-white">
+                <img class="profile m-2 hidden-top" height="250" width="250" src="./public/image/profile/UnknownRori.jpg" alt="">
+                <h2 id="introduction-pen-name-text" class="hidden-left"></h2>
+                <h5 id="introduction-profession-text" class="hidden-right"></h5>
+                <h6 id="introduction-hidden" class="hidden">I design and built a website</h6>
+            </div>
+        </section>
+
+        <section id="projects" class="hidden">
+            <div class="row text-center">
+                <div id="work" class="col-sm-4">
                     <a href="https://github.com/UnknownRori/fake-e-commerce-laravel-app" class="text-white text-decoration" target="_blank">
-                        <img class="img-fluid" src="./public/image/work/fake-e-commerce-web-app.jpg" alt="">
+                        <img class="img-fluid" src="./public/image/work/fake-e-commerce-web-app.jpg" alt="E-Commerce">
                         <h6>Fake E-Commerce Web Application</h6>
                     </a>
                 </div>
-                <div id="work" data-hidden="6" class="col-sm-4 hidden p-3">
+                <div id="work" class="col-sm-4 p-3">
                     <a href="https://github.com/UnknownRori/personal-portfolio" class="text-white text-decoration" target="_blank">
-                        <img class="img-fluid" src="./public/image/work/portfolio.jpg" alt="">
+                        <img class="img-fluid" src="./public/image/work/portfolio.jpg" alt="Portfolio">
                         <h6>Personal Portfolio</h6>
                     </a>
                 </div>
-                <div id="work" data-hidden="8" class="col-sm-4 hidden p-3">
+                <div id="work" class="col-sm-4 p-3">
                     <a href="https://unknownrori.github.io/basic-online-calculator/" class="text-white text-decoration" target="_blank">
-                        <img class="img-fluid" src="./public/image/work/basic-calculator.jpg" alt="">
+                        <img class="img-fluid" src="./public/image/work/basic-calculator.jpg" alt="Calculator">
                         <h6>Basic Calculator</h6>
                     </a>
                 </div>
-                <div id="work" data-hidden="9" class="col-sm-4 hidden p-3">
+                <div id="work" class="col-sm-4 p-3">
                     <a href="https://unknownrori.github.io/simple-tic-tac-toe/" class="text-white text-decoration-none" target="_blank">
-                        <img class="img-fluid" src="./public/image/work/basic-hotseat-tic-tac-toe.jpg" alt="">
+                        <img class="img-fluid" src="./public/image/work/basic-hotseat-tic-tac-toe.jpg" alt="Tic Tac Toe">
                         <h6>Basic Hotseat Tic Tac Toe</h6>
                     </a>
                 </div>
-                <div id="work" data-hidden="10" class="col-sm-4 hidden p-3">
+                <div id="work"  class="col-sm-4 p-3">
                     <a href="https://github.com/UnknownRori/UnknownRori-PHP" class="text-white text-decoration-none" target="_blank">
-                        <img class="img-fluid" src="./public/image/work/php-framework.jpg" alt="">
+                        <img class="img-fluid" src="./public/image/work/php-framework.jpg" alt="UnknownRori-PHP">
                         <h6>PHP Framework</h6>
                     </a>
                 </div>
-                <div id="work" data-hidden="11" class="col-sm-4 hidden p-3">
-                    Coming Soon
+                <div id="work" class="col-sm-4 p-3">
+                    <a href="#" class="text-decoration-none text-white">
+                        <h6>Coming Soon</h6>
+                    </a>
                 </div>
             </div>
-            <div data-hidden="12" class="m-auto text-center p-2 hidden">
+
+            <div class="m-auto text-center p-2">
                 <a id="showall" class="text-decoration-none btn btn-dark text-white"
                     href="https://github.com/UnknownRori" data-target="_blank">
                     Show All
@@ -104,25 +132,42 @@
                     </svg>
                 </a>
             </div>
-        </article>
-    </main>
+        </section>
 
-    <div id="contact" class="container-fluid text-white bg-dark-custom-navbar p-3 mb-3 text-center"
-        style="height: 200px;">
-        <h2>Let's work together</h2>
-        <h5 class="pb-3">Contact me</h5>
-        <div class="container p-3">
-            <a href="https://twitter.com/UnknownRori" target="_blank" class="p-3 m-3 text-decoration-none text-white link">
-                <img width="25" height="25"
-                    src="./public/image/contact/Twitter social icons - rounded square - white.png">
-                <label>Twitter</label>
-            </a>
-            <a href="https://github.com/UnknownRori/" target="_blank" class="p-3 m-3 text-decoration-none text-white link">
-                <img width="25" height="25" src="./public/image/contact/GitHub-Mark-Light-32px.png" alt="">
-                <label>Github</label>
-            </a>
-        </div>
-    </div>
+        <section id="about" class="hidden">
+            <div class="col-md-10 p-3 bg-dark-custom-page rounded m-auto shadow">
+                <h3>Hi there 👋</h3>
+
+                <p>
+                    🧍 I'm UnknownRori, a high school student. I'm very enthusiatic about learning new technology.    
+                </p>
+
+                <p>
+                    💻 Technology that i learned is Laravel, Tailwind, Bootstrap, Jquery, Mysql, HTML, CSS, JS, PHP, Python.
+                </p>
+
+                <p>
+                    🕸️ I also has website thanks to github page.
+                </p>
+
+                <p align="center">
+                    <img style="margin:auto" height="150" src="https://github-readme-stats.vercel.app/api?username=UnknownRori&show_icons=true&theme=tokyonight" />
+                    <img style="margin:auto" height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=UnknownRori&layout=compact&theme=tokyonight" />
+                </p>
+
+                <div class="mt-2 text-center">
+                    <h6>Link</h6>
+                    <a href="https://github.com/UnknownRori" class="text-decoration-none" target="_blank">
+                        <img class="img-fluid mx-2" width="25" height="25" src="./public/image/contact/GitHub-Mark-Light-32px.png" alt="Github Icon">
+                    </a>
+                    <a href="https://twitter.com/UnknownRori" class="text-decoration-none" target="_blank">
+                        <img class="img-fluid mx-2" width="25" height="25" src="./public/image/contact/Twitter social icons - rounded square - white.png" alt="Twitter Icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <div class="footer bg-dark fixed-bottom">
         <div class="container">

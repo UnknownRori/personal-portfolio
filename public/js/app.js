@@ -1,31 +1,17 @@
 $(()=> {
     BackgroundInterval();
-    HiddenWork();
     $('#introduction-hidden').removeClass('hidden');
     PrintLetterbyLetter("Hi! I am UnknownRori", 100, "introduction-pen-name-text");
     PrintLetterbyLetter("A Fullstack Web Developer", 100, "introduction-profession-text");
     PrintLetterbyLetter("UnknownRori", 100, "Author");
     $('#introduction-pen-name-text').removeClass('hidden-left');
     $('#introduction-profession-text').removeClass('hidden-right');
-    setTimeout(() => {
-        $('body').css('overflow-y', 'auto');
-    }, 3000);
 })
-
-$(window).scroll(() => {
-    hScroll = $(this).scrollTop();
-    if(hScroll > 140){
-        $('#btn-top').removeClass('hidden');
-    }else{
-        $('#btn-top').addClass('hidden');
-    }
-});
 
 let BackgroundInterval = () => {
     let interval = 2;
     let beforeinterval = 1;
-    const backroundInterval = setInterval(()=>{
-        console.log(beforeinterval);
+    setInterval(()=>{
         $('[data-background=' + beforeinterval.toString() + ']').css('opacity', 0);
         $('[data-background=' + interval.toString() + ']').css('opacity', 1);
 
@@ -48,42 +34,11 @@ function PrintLetterbyLetter(string, time, id) {
     }, time);
 }
 
-let HiddenWork = () => {
-    $(window).scroll(function () {
-
-        hScroll = $(this).scrollTop();
-
-        if (hScroll > 140) {
-            let state = 1;
-            const show = setInterval(() => {
-                try {
-                    $('[data-hidden=' + state.toString() + ']').removeClass('hidden');
-                } catch {
-                    console.error("Cannot Display the hidden object");
-                    clearInterval(show);
-                }
-                state++;
-
-                if (state > 12) {
-                    clearInterval(show);
-                }
-            }, 100);
-        } else {
-            let state = 1;
-            const hide = setInterval(() => {
-                try {
-                    $('[data-hidden=' + state.toString() + ']').addClass('hidden');
-                } catch {
-                    console.error("Cannot Display the hidden object");
-                    clearInterval(hide);
-                }
-                state++;
-
-                if (state > 12) {
-                    clearInterval(hide);
-                }
-            }, 100);
-        }
-
+const do_nav = (elem) => {
+    const nav = ['profile', 'projects', 'about'];
+    var id = $(elem).attr("data-target");
+    nav.map((content) => {
+        $(`#${content}`).addClass('hidden');
     })
+    $(`#${id}`).removeClass('hidden');
 }

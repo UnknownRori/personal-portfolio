@@ -1,7 +1,7 @@
 .profile {
-    width: 200px;
-    border-radius: 8rem;
+    border-radius: 100%;
     transition: 2s;
+    object-fit: cover;
 }
 
 .profile:hover {
