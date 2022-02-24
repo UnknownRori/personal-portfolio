@@ -20,7 +20,7 @@ let BackgroundInterval = () => {
             interval = 0;
         }
         interval++;
-    }, 5000)
+    }, 8000)
 };
 
 function PrintLetterbyLetter(string, time, id) {
