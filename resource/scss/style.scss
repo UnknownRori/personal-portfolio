@@ -14,17 +14,8 @@
 }
 
 body {
-    max-width: 100%;
-    min-width: 100%;
     object-fit: contain;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 100vh;
-    max-width: 100vw;
     background-image: linear-gradient(to left, #003108, #13715b);
-    max-height: 100vh;
 }
 
 .shadow {
