@@ -1,4 +1,4 @@
-$(()=> {
+$(() => {
     BackgroundInterval();
     $('#introduction-hidden').removeClass('hidden');
     PrintLetterbyLetter("Hi! I am UnknownRori", 100, "introduction-pen-name-text");
@@ -11,12 +11,12 @@ $(()=> {
 let BackgroundInterval = () => {
     let interval = 2;
     let beforeinterval = 1;
-    setInterval(()=>{
+    setInterval(() => {
         $('[data-background=' + beforeinterval.toString() + ']').css('opacity', 0);
         $('[data-background=' + interval.toString() + ']').css('opacity', 1);
 
         beforeinterval = interval;
-        if (interval == 5) {
+        if (interval == 6) {
             interval = 0;
         }
         interval++;
@@ -25,7 +25,7 @@ let BackgroundInterval = () => {
 
 function PrintLetterbyLetter(string, time, id) {
     let i = 0;
-    var interval = setInterval(function() {
+    var interval = setInterval(function () {
         document.getElementById(id).innerHTML += string.charAt(i);
         i++;
         if (i > string.length) {
