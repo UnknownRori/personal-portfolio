@@ -6,6 +6,7 @@ $(() => {
     PrintLetterbyLetter("UnknownRori", 100, "Author");
     $('#introduction-pen-name-text').removeClass('hidden-left');
     $('#introduction-profession-text').removeClass('hidden-right');
+    alert("Important note : This web page will soon migrated to https://unknownrori-firebase.web.app/");
 })
 
 let BackgroundInterval = () => {
